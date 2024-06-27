@@ -20,10 +20,6 @@ const accountSchema = new Schema({
     createdAt: {
         type: Date,
         default: Date.now
-    },
-    expiresAt: {
-        type: Date,
-        default: Date.now
     }
 });
 
