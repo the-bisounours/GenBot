@@ -36,7 +36,7 @@ module.exports = {
                 userId: interaction.user.id,
                 premium: false,
                 cooldown: new Date()
-            });
+            }).save();
         };
 
         if(!user.premium) {
