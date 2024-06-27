@@ -8,6 +8,10 @@ const userSchema = new Schema({
     premium: {
         type: Boolean,
         required: true
+    },
+    cooldown: { 
+        type: Date, 
+        default: Date.now 
     }
 });
 
