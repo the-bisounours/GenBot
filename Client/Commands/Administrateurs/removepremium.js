@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, Client, ChatInputCommandInteraction, PermissionFlagsBits } = require("discord.js");
-const { Users, Accounts } = require("../../Models");
+const { Users } = require("../../Models");
 
 module.exports = {
     data: new SlashCommandBuilder()
