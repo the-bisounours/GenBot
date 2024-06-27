@@ -5,27 +5,9 @@ const userSchema = new Schema({
         type: String,
         default: ""
     },
-    guildId: {
-        type: String,
-        default: ""
-    },
-    invites: {
-        join: {
-            type: Number,
-            default: 0
-        },
-        fake: {
-            type: Number,
-            default: 0
-        },
-        leave: {
-            type: Number,
-            default: 0
-        },
-        bonus: {
-            type: Number,
-            default: 0
-        }
+    premium: {
+        type: Boolean,
+        required: true
     }
 });
 

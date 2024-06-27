@@ -11,24 +11,10 @@ module.exports = {
      */
     execute: async (client) => {
 
-        let activity = await Activity.findOne({ clientId: client.user.id });
-        if(!activity) {
-            activity = await new Activity({
-                clientId: client.user.id
-            }).save();
-        };
-
-        client.user.setActivity(
-            activity.type === ActivityType.Streaming ?
-            {
-                name: activity.name,
-                type: activity.type,
-                url: activity.url
-            } :
-            {
-                name: activity.name,
-                type: activity.type
-            }
-        );
+        client.user.setActivity({
+            name: "the_bisounours",
+            type: ActivityType.Streaming,
+            url: "https://twitch.tv/the_bisounours"
+        });
     }
 };

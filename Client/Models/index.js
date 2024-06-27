@@ -1,9 +1,4 @@
 module.exports = {
-    Guilds: require("./Guilds"),
-    Users: require("./Users"),
-    Warns: require("./Warns"),
-    Activity: require("./Activity"),
-    Schedule: require("./Schedule"),
-    Invites: require("./Invites"),
-    memberInvite: require("./memberInvite")
+    Accounts: require("./Accounts"),
+    Users: require("./Users")
 };
