@@ -11,6 +11,7 @@ token=votre_token_ici
 mongoDB=mongodb+srv://<Utilisateur>:<MotDePasse>@<NomDeLaDb>.<codeDb>.mongodb.net/<NomDuBot>
 clientId=votre_client_id_ici
 supportInvite=https://discord.gg/<code>
+CooldownHours=6
 ```
 
 ## Lancement
