@@ -10,6 +10,7 @@ Ensuite, créez un fichier .env à la racine du projet et ajoutez-y votre token 
 token=votre_token_ici
 mongoDB=mongodb+srv://<Utilisateur>:<MotDePasse>@<NomDeLaDb>.<codeDb>.mongodb.net/<NomDuBot>
 clientId=votre_client_id_ici
+supportInvite=https://discord.gg/<code>
 ```
 
 ## Lancement
