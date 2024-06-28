@@ -32,7 +32,7 @@ module.exports = async (client) => {
         });
     };
 
-    ['Buttons', 'Modals', 'Selects', 'Commands', 'Contexts'].forEach(type => {
+    ['Buttons', 'Commands'].forEach(type => {
         loadItems(`./Client/${type}`, client[type.toLowerCase()]);
     });
 
