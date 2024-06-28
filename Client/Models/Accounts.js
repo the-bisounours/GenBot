@@ -1,6 +1,10 @@
 const { model, Schema } = require("mongoose");
 
 const accountSchema = new Schema({
+    guildId: {
+        type: String,
+        default: ""
+    },
     accountId: {
         type: String,
         default: ""

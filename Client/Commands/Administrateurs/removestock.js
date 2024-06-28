@@ -24,6 +24,7 @@ module.exports = {
     execute: async (client, interaction) => {
 
         const account = await Accounts.findOneAndDelete({
+            guildId: interaction.guild.id,
             accountId: interaction.options.getString("account")
         });
 

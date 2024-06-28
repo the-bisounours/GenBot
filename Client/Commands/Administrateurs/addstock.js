@@ -43,6 +43,7 @@ module.exports = {
         const password = interaction.options.getString("password");
 
         const account = await new Accounts({
+            guildId: interaction.guild.id,
             accountId: id("ACCOUNT", 8),
             service: service,
             username: username,

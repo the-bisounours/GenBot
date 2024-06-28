@@ -18,10 +18,13 @@ module.exports = {
      */
     execute: async (client, interaction) => {
 
-        const accounts = await Accounts.find();
+        const accounts = await Accounts.find({ 
+            guildId: interaction.guild.id
+        });
+
         if(accounts.length === 0) {
             return await interaction.reply({
-                content: "Aucun compte disponible.",
+                content: "Aucun compte disponible dans ce serveur.",
                 ephemeral: true
             });
         };
